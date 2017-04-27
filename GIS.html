@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Copyright 2008 R J Haddlesey. All rights reserved. -->
+<title>GIS in archaeology</title>
+<meta name="keywords" content="gis, arcmap, arcview, esri, tutorial, gis tutorial, gis powerpoint, gis.ppt, gis archaeology, black death, black, death, 1348, 1349, 1350, 14thC, Melcome Regis, weymouth, dorset, plague, rats, scarfs, scarf, hampshire, carpenters marks, carpenter, mark, scarf joint, digital archaeology, buildings archaeology, dendrochronology, dendro, tree ring dating, medieval architecture, medieval archaeology, british medieval architecture, loas, laos, uxo, annie kemp, timber joints, medieval carpentry, medieval timber frame, timber frame, timber-frame, box frame, box-frame, akkerman, devizes corbel, devizes heads, dendro, dendrochronology, hampshire, black death, richard john haddlesey, virtual meccano, medieval material culture, medieval history, gis, stats, statistics, geographic information system, gps, virtual archaeology, digital technology, digital technologies, richard haddlesey, r haddlesey, medieval architecture, medieval housing, medieval building, medieval carpentry, 3d models, photosynth, acrobat 3d, 3d, virtual archaeology, digital archaelogy, richie haddlesey" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link href="mm_entertainment.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.thrColHybHdr #sidebar1, .thrColHybHdr #sidebar2 { padding-top: 30px; }
+.thrColHybHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<style type="text/css">
+<!--
+.style1 {color: #000066}
+.style2 {font-size: 12px}
+.style5 {font-size: 18px}
+-->
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {color: #557488}
+-->
+</style>
+</head>
+
+<body class="thrColHybHdr" onload="MM_preloadImages('images/winchcathroof.jpg','images/5.jpg','images/CRW_7296.jpg')">
+
+<div id="container">
+  <div id="header">
+    <h1 class="style1">&nbsp;</h1>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+    
+        <!-- menu !-->
+
+<ul id="MenuBar1" class="MenuBarVertical">
+<li><a href="index.html">home</a></li>
+<li><a href="search.html">search site</a></li>
+<li><a class="MenuBarItemSubmenu" href="academic_papers.html">academic papers</a>
+<ul>
+<li><a href="academic_papers.html">thesis</a></li>
+<li><a href="black_death.html">black death</a></li>
+<li><a href="Buildings_archaeology.html">buildings archaeology</a></li>
+<li><a href="dendrochronology.html">dendro-chronology</a></li>
+<li><a href="GIS.html">GIS in archaeology</a></li>
+<li><a href="Publications.html">publications</a></li>
+<li><a href="Stats.html">statistics</a></li>
+<li><a href="Devizes_Heads.html">devizes heads</a></li>
+</ul>
+</li>
+<li><a href="blog/index.php" class="MenuBarItemSubmenu">news</a>
+<ul>
+<li><a href="blog/index.php">blog</a></li>
+<li><a href="upcoming_events.html">upcoming events</a></li>
+<li><a href="related_blogs.html">related blogs</a></li>
+</ul>
+</li>
+<li><a class="MenuBarItemSubmenu" href="photo_archive.html">photo archive</a>
+<ul>
+<li><a href="photo_archive.html">main archive</a></li>
+<li><a href="images/carpenters_marks/index.htm">carpenters marks</a></li>
+<li><a href="images/photos/index.htm">hampshire crucks</a></li>
+<li><a href="images/scarfs/index.htm">scarf joints</a></li>
+</ul>
+</li>
+<li><a href="video_archive.html" class="MenuBarItemSubmenu">model archive</a>
+<ul>
+<li><a href="video_archive.html">main archive</a></li>
+<li><a href="3d_models.html">photosynths</a></li>
+</ul>
+</li>
+<li><a href="Ukraine.html" class="MenuBarItemSubmenu">akkerman fortress</a>
+<ul>
+<li><a href="http://www.akkermanfortress.org/">akkerman fortress project</a></li>
+<li><a href="ukraine.html">akkerman geophysics</a></li>
+</ul>
+</li>
+<li><a href="about_us.html" class="MenuBarItemSubmenu">about us / links</a>
+<ul>
+<li><a href="about_us.html">about us</a></li>
+<li><a href="contact.html">contact us and links</a></li>
+</ul>
+</li>
+<li><a href="Devizes_Heads.html">the devizes 'wooden heads'</a></li>
+<li><a href="http://medievalarchitecture.ubik.net/">mobile version</a></li>
+</ul>
+<!-- end menu R. Haddlesey -->
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">addthis_pub  = 'rhaddlesey';</script>
+<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+<!-- AddThis Button END -->
+&nbsp; </p>
+  <!-- end #sidebar1 --></div>
+  <div id="sidebar2">
+    <h3><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','images/winchcathroof.jpg',1)"><img src="images/6.jpg" name="Image1" width="160" height="120" border="0" id="Image1" /></a></h3>
+    <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','images/5.jpg',1)"><img src="images/dovetail.jpg" name="Image2" width="160" height="120" border="0" id="Image2" /></a></p>
+    <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/CRW_7296.jpg',1)"><img src="images/CRW_5974.jpg" name="Image3" width="160" height="120" border="0" id="Image3" /></a></p>
+  <!-- end #sidebar2 --></div>
+  <div id="mainContent">
+    <h1><span class="fltlft style8 style6">British Medieval Architecture</span></h1>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h1 class="style5">Geographic Information Systems/Science in archaeology</h1>
+    <p>introduction to GIS in archaeology (PowerPoint) <a href="files/GIS/Intro_to_GIS_week3_210207.ppt">download</a> or <a href="http://www.scribd.com/doc/2632783/introtogisweek3210207">view</a></p>
+    <p>GIS_part2_vector vs raster graphics (PowerPoint) <a href="files/GIS/GIS_part2_week4_280207.ppt">download</a> or <a href="http://www.scribd.com/doc/2632678/gispart2week4280207">view</a></p>
+    <p>GIS_part3_using and georeferencing images (PowerPoint) <a href="files/GIS/GIS_part3_week5_070307.ppt">download</a> or <a href="http://www.scribd.com/doc/2632684/gispart3week5070307">view</a></p>
+    <p>GIS_part4_the geodatabase (PowerPoint) <a href="files/GIS/GIS_part4_week6_140307.ppt">download</a> or <a href="http://www.scribd.com/doc/2632697/gispart4week6140307">view</a></p>
+    <p>GIS_part5_(PowerPoint) <a href="files/GIS/GIS_part5_week7_210307.ppt">download</a> or view</p>
+    <p>GIS_part6_visualising the data (PowerPoint) <a href="files/GIS/GIS_part6_week7_280207.ppt">download</a> or <a href="http://www.scribd.com/doc/2632702/gispart6week7280207">view</a></p>
+    <p>GIS_part6_with video (warning - this is a large file) <a href="files/GIS/GIS_part6_week7_vid_280207.ppt">download</a> or <a href="http:/http://www.scribd.com/doc/2632778/gispart6week7vid280207">view</a></p>
+    <p>All files created by R Haddlesey 2007</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h1 class="style5">ebooks</h1>
+    <p><a href="http://archcomp.csanet.org/">Archaeological Computing</a> by Harrison Eiteljorg, II, with GIS chapter by W. Fredrick Limp (this is a really great book and is only published as a pdf)</p>
+    <p><a href="files/Practical%20Applications%20of%20GIS%20for%20Archaeologists.pdf">Practical applications of GIS for archaeologists</a> (Ed by Westcott and Brandon)</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+   <div id="footer">
+    <!-- #BeginDate format:Am1m -->June 12, 2010  17:13<!-- #EndDate --> in the UK  | Copyright 2008 by <a href="about_us.html">Richard John Haddlesey</a> PhD research student at the <a href="http://www2.winchester.ac.uk/archaeology/ResearchStudents.htm" target="_blank">University
+of Winchester </a>  |  <a href="mailto:rhaddlesey@medievalarchitecture.net">Contact</a>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", {contentIsOpen:false});
+//-->
+</script>
+<!-- expo-MAX Code Start //-->
+<!-- Paste this code into every page that you would like to track //-->
+<script type="text/javascript">
+	document.write(unescape('%3Cscript type="text/javascript" src="'+document.location.protocol+'//expo-max.com/adserver/js/"%3E%3C/script%3E'));
+</script>
+<span id="authf8005958fa124458955ba1ed996eac43"><a id="322db713492b481eacf3538f07a0d78c" href="http://expo-max.com">Online Ads</a><a id="5cc4849cc1f84736b548032097ce7107" href="http://www.r-tt.com/file_undelete/">undelete</a></span>
+<script type="text/javascript">
+	expomax_trace('4LdfaGo0kNwjl4wFu76rsw%3d%3d','f8005958fa124458955ba1ed996eac43');
+</script>
+<!-- expo-MAX Code End //-->
+
+</body>
+</html>
